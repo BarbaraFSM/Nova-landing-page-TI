@@ -1,13 +1,22 @@
+function openTab(event, tabName) {
+    var i, tabcontent, tablinks;
 
-    
-        // Seleciona o elemento da div e o conteúdo
-        document.getElementById("showHistory").addEventListener("click", function() {
-            var content = document.getElementById("historyContent");
-            // Alterna entre mostrar ou esconder o conteúdo
-            if (content.style.display === "none") {
-                content.style.display = "block";
-            } else {
-                content.style.display = "none";
-            }
-        });
-    
+    // Esconder todo o conteúdo das abas
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remover a classe "active" de todos os links
+    tablinks = document.getElementsByTagName("a");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Mostrar a aba atual
+    document.getElementById(tabName).style.display = "block";
+    event.currentTarget.className += " active";
+}
+
+// Exibir a aba "Nossa História" por padrão ao carregar a página
+document.getElementById('nossa-historia').style.display = 'block';
