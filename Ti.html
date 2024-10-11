@@ -1,40 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipe de TI</title>
+    <title>Equipe de TI - Inovação e Tecnologia</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-    <h1>Equipe de TI</h1>
+    <h1>Bem-vindo à Equipe de TI</h1>
 </header>
 
 <nav>
-    <a href="#nossa-historia" onclick="openTab(event, 'nossa-historia')">Nossa História</a>
+    <a href="#membros" onclick="openTab(event, 'membros')">membros</a>
     <a href="#servicos" onclick="openTab(event, 'servicos')">Serviços</a>
+    <a href="#nossa-historia" onclick="openTab(event, 'nossa-historia')">Nossa História</a>
     <a href="#projetos" onclick="openTab(event, 'projetos')">Projetos</a>
     <a href="#contato" onclick="openTab(event, 'contato')">Contato</a>
 </nav>
 
-<div class="container">
-    <div id="nossa-historia" class="tab-content active">
-        <h2>Nossa História</h2>
-        <p>Somos uma equipe de TI formada por profissionais apaixonados por tecnologia, inovação e transformação digital. Nossa missão é entregar soluções tecnológicas que ajudam nossos clientes a crescer e se destacar no mercado.</p>
-        <h3>Membros da Equipe:</h3>
-        <ul>
-            <li>Bárbara Ferreira - Desenvolvedora Back-end</li>
-            <li>Rafael Costa - Desenvolvedor Front-end</li>
-            <li>Rafael - Gerente de Projetos</li>
-            <li>cauan - Analista de Sistemas</li>
-        </ul>
+
+<section class="intro">
+    <h2>Inovação, Tecnologia e Soluções Personalizadas</h2>
+    <p>Nossa equipe de TI é especializada em fornecer soluções tecnológicas personalizadas que atendem às necessidades específicas de nossos clientes.Garantimos inovação e eficiência em cada projeto.</p>
+</section>
+
+<div id="membros" class="tab-content"></div>
+    <div class="team-member">
+        <img src="membro1.jpg" alt="Membro da equipe">
+        <h3>Bárbara Ferreira</h3>
+        <p>Desenvolvedora Full Stack</p>
+    </div>
+    <div class="team-member">
+        <img src="membro2.jpg" alt="Membro da equipe">
+        <h3>Cauã</h3>
+        <p>Especialista em Infraestrutura</p>
     </div>
 
+    <div class="team-member">
+        <img src="membro3.jpg" alt="Membro da equipe">
+        <h3>Pedro</h3>
+        <p>Analista de Segurança</p>
+    </div>
+   
+    <div class="team-member">
+        <img src="membro3.jpg" alt="Membro da equipe">
+        <h3>Rafael</h3>
+        <p>Analista de Segurança</p>
+    </div>
+   
+   
+    <div class="team-member">
+        <img src="membro3.jpg" alt="Membro da equipe">
+        <h3>Rafael</h3>
+        <p>Analista de Segurança</p>
+    </div>
+   
     <div id="servicos" class="tab-content">
         <h2>Serviços</h2>
         <p>Oferecemos uma ampla gama de serviços tecnológicos, incluindo desenvolvimento de software personalizado, gerenciamento de infraestrutura, consultoria em segurança da informação, e mais.</p>
+    </div>
+
+    <div id="nossa-historia" class="tab-content"></div>
+        <h2>nossa historia</h2>
+        <p>
+            Nossa equipe de TI começou no segundo semestre do curso de Ciência da Computação, onde descobrimos como o trabalho em conjunto faz toda a diferença.
+        Cada membro traz suas próprias habilidades e perspectivas, o que torna a colaboração essencial para superar desafios.
+        Trabalhar em equipe não só facilita o aprendizado, mas também nos impulsiona a crescer mais rápido e encontrar soluções criativas.
+         Juntos, combinamos nossas forças e aprendemos a lidar com problemas complexos, sempre compartilhando conhecimento e buscando melhorar
+         como profissionais e como grupo</p>
     </div>
 
     <div id="projetos" class="tab-content">
@@ -44,12 +79,16 @@
 
     <div id="contato" class="tab-content">
         <h2>Contato</h2>
-        <p>Entre em contato conosco através do email: contato@equipeti.com ou pelo telefone: (11) 99999-9999.</p>
+        <p>Entre em contato conosco através do email: contato@equipeti.com ou pelo telefone: (61) 99999-9999.</p>
     </div>
 </div>
+    
+</section>
 
-<script src="scripts.js"></script>
+
+<footer>
+    <p>&copy; 2024 Equipe de TI. Todos os direitos reservados.</p>
+</footer>
 
 </body>
 </html>
- Nossa equipe de TI começou no segundo semestre do curso de Ciência da Computação, onde descobrimos como o trabalho em conjunto faz toda a diferença. Cada membro traz suas próprias habilidades e perspectivas, o que torna a colaboração essencial para superar desafios. Trabalhar em equipe não só facilita o aprendizado, mas também nos impulsiona a crescer mais rápido e encontrar soluções criativas. Juntos, combinamos nossas forças e aprendemos a lidar com problemas complexos, sempre compartilhando conhecimento e buscando melhorar como profissionais e como grupo.
