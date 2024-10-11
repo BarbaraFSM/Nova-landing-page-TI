@@ -17,6 +17,3 @@ function openTab(event, tabName) {
     document.getElementById(tabName).style.display = "block";
     event.currentTarget.className += " active";
 }
-
-// Exibir a aba "Nossa História" por padrão ao carregar a página
-document.getElementById('nossa-historia').style.display = 'block';
